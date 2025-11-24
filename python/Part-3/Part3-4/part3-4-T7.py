@@ -1,9 +1,13 @@
-def squared(word, x):
+def squared(word,x):
     index = 0
-    while index < x:
-        out = word * x
-        print(out[index: index + x])
+    row = ""
+    while index < x * x:
+        if index > 0 and index % x == 0:
+            print(row)
+            row = ""
+        row += word[index % len(word)]
         index += 1
+    print(row)
 
 if __name__ == "__main__":
-    squared("abc", 5)
+    squared("ab", 3)

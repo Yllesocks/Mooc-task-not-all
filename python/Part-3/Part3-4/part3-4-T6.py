@@ -7,3 +7,7 @@ def chessboard(x):
 
 if __name__ == "__main__":
     chessboard(4)
+       
+
+if __name__ == "__main__":
+    chessboard(3)
