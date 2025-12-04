@@ -1,10 +1,11 @@
-list = []
-list_sum = []
-index = 0
-def sum_of_positives():
-    while index < len(list):
-        if list[index] > 0:
-            list_sum.append
-            index += 1
-        else:
-            index += 1
+def sum_of_positives(num):
+    total = 0
+    for n in num:
+        if n > 0:
+            total += n
+    return total
+
+if __name__ == "__main__":
+    my_list = [1, -2, 3, -4, 5]
+    result = sum_of_positives(my_list)
+    print("The result is", result)
