@@ -1,4 +1,10 @@
 num = int(input("Please type in a positive integer:"))
 
-for i in range(num):
-    print(i + 1)
+index = num - num * 2
+for i in range(num * 2 + 1):
+    if index == 0:
+        index += 1
+        continue
+    else:
+        print(index)
+        index += 1
