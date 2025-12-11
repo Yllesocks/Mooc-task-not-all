@@ -1,5 +1,3 @@
-# a place to test things
-string = "helpa"
 def no_vowels(string):
     vowels = "aeiou"
     result = ""
@@ -7,4 +5,7 @@ def no_vowels(string):
         if ch not in vowels:
             result += ch
     return result
-print(no_vowels(string))
+
+if __name__ == "__main__":
+    string = "this is an example"
+    print(no_vowels(string))
